@@ -5,7 +5,7 @@ Public Class frmUpdateCustomer
     Dim CustomerID As Integer ' A class variable
     Public Sub New(ByVal intReceivedValue As Integer)
         InitializeComponent()
-        intCustomerID = intReceivedValue
+        CustomerID = intReceivedValue
     End Sub
 
     Private Sub frmUpdateCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -47,7 +47,7 @@ Public Class frmUpdateCustomer
         strPhone = txtPhone.Text
         strEmail = txtEmail.Text
         intStateID = cboState.SelectedValue
-        intPassengerID = intCustomerID
+        intPassengerID = CustomerID
 
         Dim strUpdateQuery As String =
             $"UPDATE TPassengers

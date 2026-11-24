@@ -1,13 +1,31 @@
 ﻿Imports System.Data.SQLite
 Imports SourceGear.sqlite3
 Public Class frmCustomerSelect
+
+    Private Sub frmCustomerSelect_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim connectionString As String = "Data Source=flyme2themoon.db;Version=3;"
+        Using conn As New SQLiteConnection(connectionString)
+            conn.Open()
+            Dim strQuery As String = "SELECT strLastName FROM TPassengers"
+            Using command As New SQLiteCommand(strQuery, conn)
+                Using reader As SQLiteDataReader = command.ExecuteReader()
+                    While reader.Read()
+                        Dim strLastName As String = reader.GetString(0)
+                        cboCustomer.Items.Add(strLastName)
+                    End While
+                End Using
+            End Using
+        End Using
+    End Sub
     Private Sub btnAddCustomer_Click(sender As Object, e As EventArgs) Handles btnAddCustomer.Click
         Dim frmAddCustomerDisplay As New frmCustomerAdd
         frmAddCustomerDisplay.ShowDialog()
     End Sub
 
     Private Sub btnSelect_Click(sender As Object, e As EventArgs) Handles btnSelect.Click
-        Dim frmCustomerMainMenuDisplay As New frmCustomerMainMenu(intCustomer)
+        Dim frmCustomerMainMenuDisplay As New frmCustomerMainMenu(cboCustomer.SelectedValue)
         frmCustomerMainMenuDisplay.ShowDialog()
     End Sub
+
+
 End Class

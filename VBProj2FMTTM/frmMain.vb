@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SQLite
 Imports SourceGear.sqlite3
 
-Public Class Form1
+Public Class frmMain
     Private Sub btnCustomer_Click(sender As Object, e As EventArgs) Handles btnCustomer.Click
         Dim frmCustomerSelectDisplay As New frmCustomerSelect
         frmCustomerSelectDisplay.ShowDialog()

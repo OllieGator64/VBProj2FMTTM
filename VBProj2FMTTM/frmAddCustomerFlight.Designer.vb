@@ -25,6 +25,7 @@ Partial Class frmAddCustomerFlight
         Me.cboFlights = New System.Windows.Forms.ComboBox()
         Me.txtSeat = New System.Windows.Forms.TextBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cboFlights
@@ -37,9 +38,9 @@ Partial Class frmAddCustomerFlight
         '
         'txtSeat
         '
-        Me.txtSeat.Location = New System.Drawing.Point(12, 55)
+        Me.txtSeat.Location = New System.Drawing.Point(56, 55)
         Me.txtSeat.Name = "txtSeat"
-        Me.txtSeat.Size = New System.Drawing.Size(183, 22)
+        Me.txtSeat.Size = New System.Drawing.Size(139, 22)
         Me.txtSeat.TabIndex = 1
         '
         'btnSubmit
@@ -51,11 +52,21 @@ Partial Class frmAddCustomerFlight
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 61)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(38, 16)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Seat:"
+        '
         'frmAddCustomerFlight
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(204, 144)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.txtSeat)
         Me.Controls.Add(Me.cboFlights)
@@ -69,4 +80,5 @@ Partial Class frmAddCustomerFlight
     Friend WithEvents cboFlights As ComboBox
     Friend WithEvents txtSeat As TextBox
     Friend WithEvents btnSubmit As Button
+    Friend WithEvents Label1 As Label
 End Class
