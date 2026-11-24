@@ -22,14 +22,12 @@ Partial Class frmUpdatePilot
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.cboState = New System.Windows.Forms.ComboBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.cboRole = New System.Windows.Forms.ComboBox()
+        Me.txtDateofTermination = New System.Windows.Forms.TextBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.txtZip = New System.Windows.Forms.TextBox()
-        Me.txtCity = New System.Windows.Forms.TextBox()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtDateofLicense = New System.Windows.Forms.TextBox()
+        Me.txtDateOfHire = New System.Windows.Forms.TextBox()
+        Me.txtEmployeeID = New System.Windows.Forms.TextBox()
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.txtFirstName = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,66 +39,50 @@ Partial Class frmUpdatePilot
         Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'cboState
+        'cboRole
         '
-        Me.cboState.FormattingEnabled = True
-        Me.cboState.Location = New System.Drawing.Point(159, 121)
-        Me.cboState.Name = "cboState"
-        Me.cboState.Size = New System.Drawing.Size(121, 24)
-        Me.cboState.TabIndex = 100
+        Me.cboRole.FormattingEnabled = True
+        Me.cboRole.Location = New System.Drawing.Point(157, 177)
+        Me.cboRole.Name = "cboRole"
+        Me.cboRole.Size = New System.Drawing.Size(121, 24)
+        Me.cboRole.TabIndex = 100
         '
-        'txtEmail
+        'txtDateofTermination
         '
-        Me.txtEmail.Location = New System.Drawing.Point(159, 205)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(121, 22)
-        Me.txtEmail.TabIndex = 99
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 208)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 16)
-        Me.Label1.TabIndex = 98
-        Me.Label1.Text = "Email:"
-        '
-        'txtPhone
-        '
-        Me.txtPhone.Location = New System.Drawing.Point(159, 177)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(121, 22)
-        Me.txtPhone.TabIndex = 97
+        Me.txtDateofTermination.Location = New System.Drawing.Point(157, 121)
+        Me.txtDateofTermination.Name = "txtDateofTermination"
+        Me.txtDateofTermination.Size = New System.Drawing.Size(121, 22)
+        Me.txtDateofTermination.TabIndex = 97
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(15, 233)
+        Me.btnSubmit.Location = New System.Drawing.Point(15, 207)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(265, 86)
         Me.btnSubmit.TabIndex = 96
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
-        'txtZip
+        'txtDateofLicense
         '
-        Me.txtZip.Location = New System.Drawing.Point(159, 149)
-        Me.txtZip.Name = "txtZip"
-        Me.txtZip.Size = New System.Drawing.Size(121, 22)
-        Me.txtZip.TabIndex = 95
+        Me.txtDateofLicense.Location = New System.Drawing.Point(159, 149)
+        Me.txtDateofLicense.Name = "txtDateofLicense"
+        Me.txtDateofLicense.Size = New System.Drawing.Size(121, 22)
+        Me.txtDateofLicense.TabIndex = 95
         '
-        'txtCity
+        'txtDateOfHire
         '
-        Me.txtCity.Location = New System.Drawing.Point(159, 93)
-        Me.txtCity.Name = "txtCity"
-        Me.txtCity.Size = New System.Drawing.Size(121, 22)
-        Me.txtCity.TabIndex = 94
+        Me.txtDateOfHire.Location = New System.Drawing.Point(159, 93)
+        Me.txtDateOfHire.Name = "txtDateOfHire"
+        Me.txtDateOfHire.Size = New System.Drawing.Size(121, 22)
+        Me.txtDateOfHire.TabIndex = 94
         '
-        'txtAddress
+        'txtEmployeeID
         '
-        Me.txtAddress.Location = New System.Drawing.Point(159, 65)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(121, 22)
-        Me.txtAddress.TabIndex = 93
+        Me.txtEmployeeID.Location = New System.Drawing.Point(159, 65)
+        Me.txtEmployeeID.Name = "txtEmployeeID"
+        Me.txtEmployeeID.Size = New System.Drawing.Size(121, 22)
+        Me.txtEmployeeID.TabIndex = 93
         '
         'txtLastName
         '
@@ -121,50 +103,50 @@ Partial Class frmUpdatePilot
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(12, 180)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 16)
+        Me.Label7.Size = New System.Drawing.Size(39, 16)
         Me.Label7.TabIndex = 90
-        Me.Label7.Text = "Phone Number:"
+        Me.Label7.Text = "Role:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 149)
+        Me.Label6.Location = New System.Drawing.Point(12, 152)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(29, 16)
+        Me.Label6.Size = New System.Drawing.Size(103, 16)
         Me.Label6.TabIndex = 89
-        Me.Label6.Text = "Zip:"
+        Me.Label6.Text = "Date of License:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 121)
+        Me.Label5.Location = New System.Drawing.Point(12, 124)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 16)
+        Me.Label5.Size = New System.Drawing.Size(127, 16)
         Me.Label5.TabIndex = 88
-        Me.Label5.Text = "State:"
+        Me.Label5.Text = "Date of Termination:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 93)
+        Me.Label4.Location = New System.Drawing.Point(12, 96)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 16)
+        Me.Label4.Size = New System.Drawing.Size(81, 16)
         Me.Label4.TabIndex = 87
-        Me.Label4.Text = "City:"
+        Me.Label4.Text = "Date of Hire:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 65)
+        Me.Label3.Location = New System.Drawing.Point(12, 68)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 16)
+        Me.Label3.Size = New System.Drawing.Size(88, 16)
         Me.Label3.TabIndex = 86
-        Me.Label3.Text = "Address:"
+        Me.Label3.Text = "Employee ID:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 37)
+        Me.Label2.Location = New System.Drawing.Point(12, 40)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 16)
         Me.Label2.TabIndex = 85
@@ -173,7 +155,7 @@ Partial Class frmUpdatePilot
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 9)
+        Me.Label9.Location = New System.Drawing.Point(12, 12)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(75, 16)
         Me.Label9.TabIndex = 84
@@ -183,15 +165,13 @@ Partial Class frmUpdatePilot
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(290, 327)
-        Me.Controls.Add(Me.cboState)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtPhone)
+        Me.ClientSize = New System.Drawing.Size(290, 299)
+        Me.Controls.Add(Me.cboRole)
+        Me.Controls.Add(Me.txtDateofTermination)
         Me.Controls.Add(Me.btnSubmit)
-        Me.Controls.Add(Me.txtZip)
-        Me.Controls.Add(Me.txtCity)
-        Me.Controls.Add(Me.txtAddress)
+        Me.Controls.Add(Me.txtDateofLicense)
+        Me.Controls.Add(Me.txtDateOfHire)
+        Me.Controls.Add(Me.txtEmployeeID)
         Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.txtFirstName)
         Me.Controls.Add(Me.Label7)
@@ -208,14 +188,12 @@ Partial Class frmUpdatePilot
 
     End Sub
 
-    Friend WithEvents cboState As ComboBox
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtPhone As TextBox
+    Friend WithEvents cboRole As ComboBox
+    Friend WithEvents txtDateofTermination As TextBox
     Friend WithEvents btnSubmit As Button
-    Friend WithEvents txtZip As TextBox
-    Friend WithEvents txtCity As TextBox
-    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtDateofLicense As TextBox
+    Friend WithEvents txtDateOfHire As TextBox
+    Friend WithEvents txtEmployeeID As TextBox
     Friend WithEvents txtLastName As TextBox
     Friend WithEvents txtFirstName As TextBox
     Friend WithEvents Label7 As Label

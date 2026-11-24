@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="VBProj2FMTTM/VBProj2FMTTM.vbproj" Id="3d33585d-94d2-4297-b96c-28a3bf962bde" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="VBProj2FMTTM/VBProj2FMTTM.vbproj" Id="3d33585d-94d2-4297-b96c-28a3bf962bde">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
 </Solution>

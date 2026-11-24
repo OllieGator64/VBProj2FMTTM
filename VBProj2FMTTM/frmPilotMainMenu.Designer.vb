@@ -23,7 +23,7 @@ Partial Class frmPilotMainMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnShowFlights = New System.Windows.Forms.Button()
-        Me.btnUpdateCustomer = New System.Windows.Forms.Button()
+        Me.btnUpdatePilot = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnShowFlights
@@ -35,21 +35,21 @@ Partial Class frmPilotMainMenu
         Me.btnShowFlights.Text = "Show Flights"
         Me.btnShowFlights.UseVisualStyleBackColor = True
         '
-        'btnUpdateCustomer
+        'btnUpdatePilot
         '
-        Me.btnUpdateCustomer.Location = New System.Drawing.Point(12, 12)
-        Me.btnUpdateCustomer.Name = "btnUpdateCustomer"
-        Me.btnUpdateCustomer.Size = New System.Drawing.Size(776, 118)
-        Me.btnUpdateCustomer.TabIndex = 6
-        Me.btnUpdateCustomer.Text = "Update Pilot"
-        Me.btnUpdateCustomer.UseVisualStyleBackColor = True
+        Me.btnUpdatePilot.Location = New System.Drawing.Point(12, 12)
+        Me.btnUpdatePilot.Name = "btnUpdatePilot"
+        Me.btnUpdatePilot.Size = New System.Drawing.Size(776, 118)
+        Me.btnUpdatePilot.TabIndex = 6
+        Me.btnUpdatePilot.Text = "Update Pilot"
+        Me.btnUpdatePilot.UseVisualStyleBackColor = True
         '
         'frmPilotMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 298)
-        Me.Controls.Add(Me.btnUpdateCustomer)
+        Me.Controls.Add(Me.btnUpdatePilot)
         Me.Controls.Add(Me.btnShowFlights)
         Me.Name = "frmPilotMainMenu"
         Me.Text = "frmPilotMainMenu"
@@ -58,5 +58,5 @@ Partial Class frmPilotMainMenu
     End Sub
 
     Friend WithEvents btnShowFlights As Button
-    Friend WithEvents btnUpdateCustomer As Button
+    Friend WithEvents btnUpdatePilot As Button
 End Class
