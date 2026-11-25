@@ -17,8 +17,8 @@ Public Class frmMain
         frmAttendantSelectDisplay.ShowDialog()
     End Sub
 
-    'Private Sub btnStatistics_Click(sender As Object, e As EventArgs) Handles btnStatistics.Click
-    '    Dim frmStatisticsDisplay As New frmStatistics
-    '    frmStatisticsDisplay.ShowDialog()
-    'End Sub
+    Private Sub btnStatistics_Click(sender As Object, e As EventArgs) Handles btnStatistics.Click
+        Dim frmStatisticsDisplay As New frmStatistics
+        frmStatisticsDisplay.ShowDialog()
+    End Sub
 End Class
