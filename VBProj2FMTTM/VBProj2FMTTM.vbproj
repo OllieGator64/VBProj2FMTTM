@@ -127,9 +127,7 @@
     <Compile Include="frmCustomerSelect.Designer.vb">
       <DependentUpon>frmCustomerSelect.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmCustomerSelect.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frmCustomerSelect.vb" />
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
