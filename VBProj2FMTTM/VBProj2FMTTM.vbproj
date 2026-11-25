@@ -100,18 +100,6 @@
     <Compile Include="frmAddCustomerFlight.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAttendantMainMenu.Designer.vb">
-      <DependentUpon>frmAttendantMainMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAttendantMainMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAttendantSelect.Designer.vb">
-      <DependentUpon>frmAttendantSelect.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAttendantSelect.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmCustomerAdd.Designer.vb">
       <DependentUpon>frmCustomerAdd.vb</DependentUpon>
     </Compile>
@@ -137,58 +125,16 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmShowAttendantFlights.Designer.vb">
-      <DependentUpon>frmShowAttendantFlights.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmShowAttendantFlights.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmShowPilotFlights.Designer.vb">
-      <DependentUpon>frmShowPilotFlights.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmShowPilotFlights.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPilotMainMenu.Designer.vb">
-      <DependentUpon>frmPilotMainMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmPilotMainMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPilotSelect.Designer.vb">
-      <DependentUpon>frmPilotSelect.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmPilotSelect.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmShowCustomerFlights.Designer.vb">
       <DependentUpon>frmShowCustomerFlights.vb</DependentUpon>
     </Compile>
     <Compile Include="frmShowCustomerFlights.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStatistics.Designer.vb">
-      <DependentUpon>frmStatistics.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmStatistics.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUpdateAttendant.Designer.vb">
-      <DependentUpon>frmUpdateAttendant.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmUpdateAttendant.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmUpdateCustomer.Designer.vb">
       <DependentUpon>frmUpdateCustomer.vb</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateCustomer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUpdatePilot.Designer.vb">
-      <DependentUpon>frmUpdatePilot.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmUpdatePilot.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -211,12 +157,6 @@
     <EmbeddedResource Include="frmAddCustomerFlight.resx">
       <DependentUpon>frmAddCustomerFlight.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAttendantMainMenu.resx">
-      <DependentUpon>frmAttendantMainMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAttendantSelect.resx">
-      <DependentUpon>frmAttendantSelect.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomerAdd.resx">
       <DependentUpon>frmCustomerAdd.vb</DependentUpon>
     </EmbeddedResource>
@@ -229,32 +169,11 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPilotMainMenu.resx">
-      <DependentUpon>frmPilotMainMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPilotSelect.resx">
-      <DependentUpon>frmPilotSelect.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmShowAttendantFlights.resx">
-      <DependentUpon>frmShowAttendantFlights.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmShowCustomerFlights.resx">
       <DependentUpon>frmShowCustomerFlights.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmShowPilotFlights.resx">
-      <DependentUpon>frmShowPilotFlights.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmStatistics.resx">
-      <DependentUpon>frmStatistics.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateAttendant.resx">
-      <DependentUpon>frmUpdateAttendant.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdatePilot.resx">
-      <DependentUpon>frmUpdatePilot.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
