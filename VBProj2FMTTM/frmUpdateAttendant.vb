@@ -1,4 +1,5 @@
 ﻿Public Class frmUpdateAttendant
+    Dim intAttendantID As Integer ' A class variable
     Public Sub New(ByVal intReceivedValue As Integer)
         InitializeComponent()
         intAttendantID = intReceivedValue

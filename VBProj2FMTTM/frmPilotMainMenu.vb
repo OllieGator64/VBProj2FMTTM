@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SQLite
 Imports SourceGear.sqlite3
 Public Class frmPilotMainMenu
+    Dim intPilotID As Integer ' A class variable
     Public Sub New(ByVal intReceivedValue As Integer)
         InitializeComponent()
         intPilotID = intReceivedValue

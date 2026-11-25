@@ -2,6 +2,7 @@
 Imports System.IO
 Imports SourceGear.sqlite3
 Public Class frmUpdatePilot
+    Dim intPilotID As Integer ' A class variable
     Public Sub New(ByVal intReceivedValue As Integer)
         InitializeComponent()
         intPilotID = intReceivedValue
@@ -10,7 +11,7 @@ Public Class frmUpdatePilot
     Private Sub frmUpdatePilot_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim databasePath As String = Path.GetFullPath(Path.Combine(Application.StartupPath, "..\..\..\flyme2themoon.db"))
         Dim connectionString As String =
-        "Data Source=" & databasePath & ";Version=3;"
+    "Data Source=" & databasePath & ";Version=3;"
 
         Using conn As New SQLiteConnection(connectionString)
             conn.Open()
